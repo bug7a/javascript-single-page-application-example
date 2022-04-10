@@ -1,4 +1,4 @@
-# javascript-single-page-application-example
+# JavaScript Single-page Application Example
 An easy single-page app development technique to learn for those who know a programming language like C, C++, C#, Java, Python or Swift.
 
 - Plaftorms: Web, iOS, Android<br><br>
@@ -9,7 +9,7 @@ https://bug7a.github.io/javascript-single-page-application-example/
 
 ### ScreenShots
 
-![alt tag](https://bug7a.github.io/cordova-mobile-app-ui-template/a.png)
+![alt tag](https://bug7a.github.io/cordova-mobile-app-ui-template/javascript-single-page-application-example.png)
 
 ### Contact information
 
