@@ -252,8 +252,8 @@ var selectTask = function(clickedTask) {
 
 var removeSelectedTasks = function() {
 
-    var newTaskItemDataList = []
-    var newTaskItemList = []
+    var newTaskDataList = []
+    var newTaskList = []
 
     for (var i = 0; i < taskList.length; i++) {
         // If item is selected:
@@ -263,13 +263,13 @@ var removeSelectedTasks = function() {
 
         } else {
             // Add it to the new list.
-            newTaskItemDataList.push(taskDataList[i])
-            newTaskItemList.push(taskList[i])
+            newTaskDataList.push(taskDataList[i])
+            newTaskList.push(taskList[i])
         }
     }
 
-    taskDataList = newTaskItemDataList
-    taskList = newTaskItemList
+    taskDataList = newTaskDataList
+    taskList = newTaskList
     saveTaskDataList()
 
     repositionTasks()
