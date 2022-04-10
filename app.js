@@ -1,3 +1,4 @@
+/* Bismillah */
 /*
 
 TO-DO LIST WEB AND MOBILE APP:
@@ -213,24 +214,31 @@ var createTaskItem = function(taskText) {
     that.color = "whitesmoke"
     that.borderColor = "lightgray"
 
+    // Define a variable inside the object.
+    box.isSelected = 0
+
     makeBasicObject(box)
     return box
 }
 
 var selectTask = function(clickedTask) {
 
-    // If item is not selected:
-    if (clickedTask.boxTick.color != "tomato") {
-        clickedTask.boxTick.color = "tomato"
-        clickedTask.boxTick.border = 0
-        clickedTask.lblText.textColor = "tomato"
-        lblSelectedCount.text = num(lblSelectedCount.text) + 1
-
-    } else {
+    // If item is selected:
+    if (clickedTask.isSelected) {
+        // Unselect it.
+        clickedTask.isSelected = 0
         clickedTask.boxTick.color = "whitesmoke"
         clickedTask.boxTick.border = 1
         clickedTask.lblText.textColor = basic.TEXT_COLOR
         lblSelectedCount.text = num(lblSelectedCount.text) - 1
+
+    } else {
+        // Select it.
+        clickedTask.isSelected = 1
+        clickedTask.boxTick.color = "tomato"
+        clickedTask.boxTick.border = 0
+        clickedTask.lblText.textColor = "tomato"
+        lblSelectedCount.text = num(lblSelectedCount.text) + 1
     }
 
     // Show/hide delete task box by selected count.
@@ -244,22 +252,24 @@ var selectTask = function(clickedTask) {
 
 var removeSelectedTasks = function() {
 
-    var newtaskItemDataList = []
-    var newtaskItemList = []
+    var newTaskItemDataList = []
+    var newTaskItemList = []
 
     for (var i = 0; i < taskList.length; i++) {
-        // If item is not selected:
-        if(taskList[i].boxTick.color != "tomato") {
-            newtaskItemDataList.push(taskDataList[i])
-            newtaskItemList.push(taskList[i])
+        // If item is selected:
+        if(taskList[i].isSelected) {
+            // Remove it.
+            taskList[i].remove()
 
         } else {
-            taskList[i].remove()
+            // Add it to the new list.
+            newTaskItemDataList.push(taskDataList[i])
+            newTaskItemList.push(taskList[i])
         }
     }
 
-    taskDataList = newtaskItemDataList
-    taskList = newtaskItemList
+    taskDataList = newTaskItemDataList
+    taskList = newTaskItemList
     saveTaskDataList()
 
     repositionTasks()
