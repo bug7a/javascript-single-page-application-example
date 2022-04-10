@@ -5,7 +5,7 @@ An easy technique to learn for those who know a programming language like C, C++
 
 ### Live Preview
 
-https://bug7a.github.io/cordova-mobile-app-ui-template/
+https://bug7a.github.io/javascript-single-page-application-example/
 
 ### ScreenShots
 
