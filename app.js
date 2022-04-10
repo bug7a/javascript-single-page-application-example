@@ -1,7 +1,7 @@
 /* Bismillah */
 /*
 
-TO-DO LIST WEB AND MOBILE APP:
+TO-DO LIST APP (FOR WEB AND MOBILE):
 
 - An application that keeps a to-do list.
 - When the application is closed, the information is stored in local storage.
