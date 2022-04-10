@@ -9,7 +9,7 @@ https://bug7a.github.io/javascript-single-page-application-example/
 
 ### ScreenShots
 
-![alt tag](https://bug7a.github.io/cordova-mobile-app-ui-template/javascript-single-page-application-example.png)
+![alt tag](https://bug7a.github.io/javascript-single-page-application-example/javascript-single-page-application-example.png)
 
 ### Contact information
 
