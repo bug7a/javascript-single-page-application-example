@@ -1,0 +1,26 @@
+{
+  "name": "javascript-single-page-application-example",
+  "version": "1.0.2",
+  "description": "An easy single-page app development technique to learn for those who know a programming language like C, C++, C#, Java, Python or Swift.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bug7a/javascript-single-page-application-example.git"
+  },
+  "keywords": [
+    "single-page-app",
+    "javascript",
+    "example",
+    "front-end",
+    "webapp"
+  ],
+  "author": "Bugra Ozden",
+  "license": "SEE LICENSE IN README.md",
+  "bugs": {
+    "url": "https://github.com/bug7a/javascript-single-page-application-example/issues"
+  },
+  "homepage": "https://bug7a.github.io/javascript-single-page-application-example/"
+}
