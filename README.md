@@ -1,5 +1,5 @@
 # JavaScript Single-page Application Example
-An easy single-page app development technique to learn for those who know a programming language like C, C++, C#, Java, Python or Swift.
+Single-page application development with basic programming skills.
 
 - Plaftorms: Web, iOS, Android<br><br>
 

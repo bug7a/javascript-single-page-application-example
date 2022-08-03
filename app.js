@@ -57,12 +57,14 @@ var start = function() {
     // UI: ADD NEW TASK:
     // BOX: Container box for adding new task.
     homePage.boxNewTask = createBox(10, 10, 480, 80)
+    homePage.add(that)
     that.color = "whitesmoke"
     that.border = 0
     that.round = 16
     
     // TEXTBOX: Where the new task is written.
     homePage.boxNewTask.txtNewTask = createTextBox(20, 15, 380)
+    homePage.boxNewTask.add(that)
     that.minimal = 1
     that.color = "transparent"
     that.inputElement.setAttribute("placeholder", "Add a task")
@@ -72,6 +74,7 @@ var start = function() {
 
     // LABEL: Add new task label button.
     homePage.boxNewTask.lblAddButton = createLabel()
+    homePage.boxNewTask.add(that)
     that.text = "+"
     that.textAlign = "center"
     that.color = "#23BCC1BB"
@@ -86,6 +89,7 @@ var start = function() {
     // UI: TASK ITEMS:
     // BOX: Scrollable container box of task items.
     homePage.boxTaskItemList = createBox(10, 100, 480, page.height - 110)
+    homePage.add(that)
     that.color = "white"
     that.border = 0
     that.scrollY = 1
@@ -93,12 +97,14 @@ var start = function() {
     // UI: DELETE TASKS:
     // BOX: Container box for delete tasks.
     homePage.boxDeleteTask = createBox(10, 10, 480, 80)
+    homePage.add(that)
     that.color = "whitesmoke"
     that.round = 16
     that.visible = 0
 
     // BOX: Background box for delete image.
     homePage.boxDeleteTask.boxBackground = createBox(0, 0, 55, 55)
+    homePage.boxDeleteTask.add(that)
     that.color = "#ED6D5230"
     that.round = 30
     that.center()
@@ -106,12 +112,14 @@ var start = function() {
 
     // IMAGE: Delete image.
     homePage.boxDeleteTask.boxBackground.imgDelete = createImage(0, 0, 35, 35)
+    homePage.boxDeleteTask.boxBackground.add(that)
     that.load("images/trash.svg")
     that.opacity = 0.9
     that.center()
 
     // LABEL: Count of selected items on delete image.
     homePage.boxDeleteTask.lblCount = createLabel()
+    homePage.boxDeleteTask.add(that)
     that.left = homePage.boxDeleteTask.boxBackground.left + 41
     that.top = homePage.boxDeleteTask.boxBackground.top - 4
     that.width = "auto"
@@ -204,11 +212,13 @@ var createTaskItem = function(taskText) {
 
     // LABEL: Task text.
     box.lblText = createLabel(50, 10, 410, "auto")
+    box.add(that)
     that.color = "transparent"
     that.text = taskText
 
     // BOX: Selection circle.
     box.boxTick = createBox(15, 15, 20, 20)
+    box.add(that)
     that.round = 10
     that.border = 1
     that.color = "whitesmoke"
