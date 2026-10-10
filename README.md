@@ -11,6 +11,8 @@ https://bug7a.github.io/javascript-single-page-application-example/
 
 ![alt tag](https://bug7a.github.io/javascript-single-page-application-example/javascript-single-page-application-example.png)
 
+More components and app templates: [https://github.com/bug7a/js-components](https://github.com/bug7a/js-components)
+
 ### Contact information
 
 Started Date: 22 February 2022<br>
